@@ -2,4 +2,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  /* for visualizing */
+  border: solid;
+}
+
+body {
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template: 1fr 4fr / 1fr 4fr;
+  height: 100%;
+}
+
+.sidebar {
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.header {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.main {
+  grid-area: 2 / 2 / 3 / 3;
 }
