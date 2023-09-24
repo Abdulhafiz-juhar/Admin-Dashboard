@@ -59,6 +59,13 @@ body {
 .header > div {
   height: 100%;
 }
+.upper-header {
+  display: grid;
+  grid-template-columns: auto 2fr auto auto 1fr;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
 .upper-header input[alt="searchButton"],
 .upper-header input[alt="notificationButton"] {
   height: 25px;
