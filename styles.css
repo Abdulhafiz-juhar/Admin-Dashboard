@@ -90,6 +90,11 @@ body {
   border: solid 1px;
 }
 
+.larger img {
+  width: 60px;
+  height: 60px;
+}
+
 .main {
   background-color: #e2e8f0;
   grid-area: 2 / 2 / 3 / 3;
