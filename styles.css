@@ -89,7 +89,19 @@ body {
   height: 40px;
   border: solid 1px;
 }
+.lower-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.lower-header .welcome {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+}
 
+.lower-header .buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 .larger img {
   width: 60px;
   height: 60px;
