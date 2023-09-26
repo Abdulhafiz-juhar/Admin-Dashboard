@@ -138,4 +138,46 @@ body {
 .main {
   background-color: #e2e8f0;
   grid-area: 2 / 2 / 3 / 3;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.main .yourProjects {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding: 0 0 0 1.2rem;
+}
+.yourProjects .main-title {
+  padding: 1.5rem 1rem 1rem 0;
+}
+.yourProjects .contents {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.contents div {
+  background-color: #ffffff;
+  border-radius: 7px;
+}
+
+.main .announcements-trendings {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  padding: 0 0 0 1.2rem;
+  gap: 1rem;
+}
+.announcements,
+.trendings {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+.announcements-title,
+.trendings-title {
+  padding: 1.5rem 1rem 1rem 0;
+}
+
+.announcements-content,
+.trendings-content {
+  background-color: #ffffff;
+  border-radius: 7px;
 }
