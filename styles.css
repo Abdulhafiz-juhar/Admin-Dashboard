@@ -109,6 +109,7 @@ body {
 }
 .hi {
   align-self: end;
+  font-weight: 600;
 }
 .full-user {
   align-self: start;
