@@ -178,7 +178,7 @@ body {
 
 .main .announcements-trendings {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
   padding: 0 4rem 2.5rem 1.2rem;
   gap: 1rem;
 }
@@ -212,4 +212,33 @@ body {
   border-top: solid;
   border-bottom: solid;
   border-color: #efefef;
+}
+
+.trendings-content {
+  display: grid;
+  grid-template-rows: repeat(4, min-content);
+  font-size: 14px;
+  gap: 1rem;
+}
+
+.trendings-content > div {
+  display: grid;
+  grid-template: 1fr 1fr / auto 1fr;
+  gap: 0.1rem 1rem;
+}
+
+.trendings-content .profile-pic {
+  grid-area: 1 / 1 / 3 / 2;
+  place-self: center;
+}
+.trendings-content .user-id {
+  align-self: end;
+}
+.trendings-content .user-desc {
+  align-self: start;
+}
+
+.announcements-content > div > p,
+.trendings-content .user-desc {
+  color: #636363;
 }
