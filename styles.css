@@ -6,6 +6,10 @@
   /* border: solid; */
 }
 
+body {
+  height: 820px;
+}
+
 .container {
   display: grid;
   grid-template: 1fr 4fr / minmax(0, 1fr) 4fr;
@@ -192,4 +196,20 @@
 .trendings-content {
   background-color: #ffffff;
   border-radius: 7px;
+  padding: 1rem;
+}
+
+.announcements-content {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  font-size: 14px;
+}
+.announcements-content > div {
+  padding: 0.5rem;
+}
+
+.announcements-content > div:nth-child(2) {
+  border-top: solid;
+  border-bottom: solid;
+  border-color: #efefef;
 }
