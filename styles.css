@@ -137,10 +137,11 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
+
 .main .yourProjects {
   display: grid;
   grid-template-rows: auto 1fr;
-  padding: 0 0 0 1.2rem;
+  padding: 0 0 2.5rem 1.2rem;
 }
 .yourProjects .main-title {
   padding: 1.5rem 1rem 1rem 0;
@@ -151,16 +152,30 @@
   gap: 1.5rem;
 }
 
-.contents div {
+.contents > div {
   background-color: #ffffff;
   border-radius: 5px;
   box-shadow: inset 0.5rem 0rem 0px 0px #f0b429;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  padding: 1rem;
+}
+.content-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 1.5rem;
+  justify-content: end;
+  padding: 0.5rem;
+}
+
+.content-buttons input {
+  height: 25px;
 }
 
 .main .announcements-trendings {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  padding: 0 4rem 0 1.2rem;
+  padding: 0 4rem 2.5rem 1.2rem;
   gap: 1rem;
 }
 .announcements,
