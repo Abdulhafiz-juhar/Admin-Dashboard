@@ -250,6 +250,7 @@ body {
 }
 
 .announcements-content > div > p,
-.trendings-content .user-desc {
+.trendings-content .user-desc,
+.main .content-detail {
   color: #636363;
 }
