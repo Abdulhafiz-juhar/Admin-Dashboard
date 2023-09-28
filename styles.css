@@ -26,10 +26,11 @@ body {
   grid-area: 1 / 1 / 3 / 2;
   background-color: #1992d4;
   padding: 10px;
+  font-size: 1.2rem;
 
   display: grid;
   grid-template-columns: 1fr 3fr;
-  grid-template-rows: repeat(auto-fill, 34px);
+  grid-template-rows: repeat(auto-fill, 43px);
   align-items: center;
   color: white;
   overflow: hidden;
@@ -48,6 +49,10 @@ body {
 
 .logo {
   justify-self: center;
+}
+
+.sidebar .label {
+  margin-bottom: 6px;
 }
 
 .header {
